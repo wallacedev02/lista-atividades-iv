@@ -1,0 +1,19 @@
+package user;
+import java.util.Scanner;
+
+public class main {
+    public static void main(String[] args) {
+       Scanner leia = new Scanner(System.in);
+       
+       String senha= "", usuario = "";
+        System.out.println("Digite o nome do usuario");
+        usuario = leia.next();
+         System.out.println("Digite a senha");
+        senha = leia.next();
+       while(senha.equals(usuario)){
+           System.out.println("Digite a senha novamente:");
+           senha = leia.next();
+       }
+    }
+    
+}
